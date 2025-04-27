@@ -17,6 +17,9 @@
     go install github.com/bufbuild/connect-go/cmd/protoc-gen-connect-go@latest
     npm install --save-dev @bufbuild/protoc-gen-connect-es
 
+## 安装测试依赖
+    npm install --save-dev jest @testing-library/react @testing-library/jest-dom @testing-library/user-event @testing-library/react-hooks 
+    npm install --save-dev @types/jest @types/node
 
 
 ## 运行
@@ -36,4 +39,17 @@
 ## 访问
     http://localhost:3000
 
+
+## Go 单测
+    go test ./server/...
+
+
+## Next.js 单测
+    npm run test
+
+## web/package.json 里加上
+
+    "scripts": {
+        "test": "jest"
+    }
 
